@@ -1,0 +1,337 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h2,
+h3 {
+  margin: 1rem 0;
+}
+.register {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ajusta el índice z si es necesario */
+}
+
+.register a {
+  color: #ffffff;
+  border: 1px solid #00000050;
+  border-top: 0px;
+  border-left: 0px;
+  padding: 6px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-family: "Alegreya", sans-serif; /* Corrección de la declaración de fuente */
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000000;
+  gap: 6px;
+}
+
+nav a {
+  color: #000000;
+  border: 1px solid #00000050;
+  border-top: 0px;
+  border-left: 0px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 12px;
+  margin: 8px;
+  font-family: Alegreya sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid #00000050;
+  background-color: #ffffff;
+  padding: 6px;
+  box-shadow: 0px 0px 10px 0px rgba(6, 27, 20, 0.822);
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-image: url(imagenes/handrawn-barbecue-elements.jpg);
+  gap: 0px;
+  background-size: contain;
+  width: 100%;
+}
+#logo {
+  width: 270px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+.navegador ul {
+  display: flex;
+  justify-content: space-around; /* Alinea los elementos horizontalmente */
+}
+
+.navegador ul li {
+  flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los elementos */
+  text-align: center; /* Centra el texto dentro de cada elemento li */
+}
+
+.navegador ul li a {
+  display: block; /* Convierte el enlace en un elemento de bloque */
+  padding: 5px; /* Agrega relleno para espaciar los enlaces */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+.navegador ul li a :hover {
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid #00000050;
+  background-color: #ffffff;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(6, 27, 20, 0.822);
+  color: #000000;
+}
+nav {
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 30px;
+  width: 700px;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.308);
+}
+
+/* Main section styles */
+main {
+  background-image: url(imagenes/beige-paintbrush-stroke-textured-background.jpg);
+  background-size: cover;
+  padding-top: 15px;
+}
+.container_info {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contendor_cuerpo {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.quienes_somos {
+  background-image: url(imagenes/22461.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.quienes_somos h3,
+p {
+  padding: 40px;
+  color: rgb(255, 255, 255);
+}
+.que_somos {
+  background-image: url(imagenes/wheat-field-waving-wind-field-background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.servicios {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-image: url(imagenes/2150825044.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.servicios li {
+  padding-bottom: 20px; /* Relleno para cada ítem */
+  padding-top: 20px;
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+#servicios {
+  width: 100%;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.opacidad {
+  display: flex;
+  background-color: #000000b4;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.carrusel {
+  position: relative;
+  width: 100%; /* Ajusta esto según el tamaño deseado */
+  max-width: 600px; /* Ajusta esto según el tamaño deseado */
+  height: 400px; /* Asegúrate de establecer una altura */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrusel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegúrate de que cada imagen cubra todo el contenedor */
+  height: 100%; /* Esto hará que la imagen cubra todo el alto del contenedor */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carrusel img:first-of-type {
+  opacity: 1;
+}
+
+/* Modal */
+#modal::backdrop {
+  background-color: rgb(0, 0, 0);
+}
+#modal-registrar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.705);
+  overflow-y: hidden;
+}
+#modal-registrar h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+}
+#modal-registrar > form {
+  background-color: #00000000;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+  color: white;
+}
+
+#modal-registrar button {
+  color: #ffffff;
+  border: 1px solid #00000050;
+  border-top: 0px;
+  border-left: 0px;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-family: "Alegreya", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000000;
+  gap: 6px;
+}
+#modal-registrar button:hover {
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid #00000050;
+  background-color: #ffffff;
+  padding: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(6, 27, 20, 0.822);
+  color: #000000;
+}
+#modal-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.705);
+  overflow-y: hidden;
+}
+#modal-login h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+}
+#modal-login > form {
+  background-color: #00000000;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+  color: white;
+}
+
+#modal-login button {
+  color: #ffffff;
+  border: 1px solid #00000050;
+  border-top: 0px;
+  border-left: 0px;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-family: "Alegreya", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000000;
+  gap: 6px;
+}
+#modal-login button:hover {
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid #00000050;
+  background-color: #ffffff;
+  padding: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(6, 27, 20, 0.822);
+  color: #000000;
+}
+/* Footer styles */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}

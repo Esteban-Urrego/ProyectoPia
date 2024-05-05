@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="register">
+        <a id="abrir-registro">Registrar</a>
+        <a id="abrir-login">Iniciar Sesión</a>
+      </div>
+
+      <nav>
+        <div class="logo">
+          <img
+            src="imagenes/HF 40000.png"
+            alt=""
+            id="logo"
+            style="
+              margin-top: 5px;
+              margin-bottom: 15px;
+              padding: 20px;
+              border: 3px solid black;
+              border-radius: 9px;
+            "
+          />
+        </div>
+        <div class="navegador">
+          <ul>
+            <li><a href="#search">Inicio</a></li>
+            <li><a> Consulta profesional </a></li>
+            <li>
+              <a onclick="window.location.href='/restaurantes.html';">
+                Restaurantes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container_info">
+        <div class="contendor_cuerpo que_somos">
+          <div class="opacidad">
+            <div id="quienes_somos">
+              <h2>Bienvenido a Healthy Food</h2>
+              <h4>Bienestar a través de la nutrición inteligente.</h4>
+              <p>
+                En Healthy Food, creemos que la clave para un estilo de vida
+                saludable comienza con una alimentación adecuada. Por eso, nos
+                dedicamos a proporcionarte comidas y productos que no solo son
+                saludables, sino también deliciosos y satisfactorios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contendor_cuerpo">
+          <div class="opacidad">
+            <div id="como_funciona">
+              <h3>Únete a la Comunidad Healthy Food</h3>
+              <p>
+                Regístrate en nuestro boletín para recibir recetas saludables,
+                consejos nutricionales y promociones especiales directamente en
+                tu bandeja de entrada. ¡Explora nuestro sitio para saber más y
+                hacer tu primer pedido con nosotros hoy mismo! En Healthy Food,
+                estamos emocionados de ser parte de tu viaje hacia una vida más
+                saludable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_info">
+        <div class="contendor_cuerpo servicios">
+          <div class="opacidad">
+            <div id="servicios">
+              <h2>Nuestros Servicios</h2>
+              <ol>
+                <li>
+                  <h4>1. Menú Personalizado:</h4>
+                  Ofrecemos una variedad de opciones en nuestro menú que se
+                  adapta a diferentes necesidades dietéticas, incluyendo
+                  vegetariano, vegano, y bajo en carbohidratos. Cada plato está
+                  diseñado por nutricionistas para asegurar un balance perfecto
+                  entre nutrientes y sabor.
+                </li>
+                <li>
+                  <h4>2. Planes de Comidas Saludables:</h4>
+                  Si buscas mantener una dieta equilibrada sin el estrés de
+                  planificar y cocinar, nuestros planes de comidas saludables
+                  son perfectos para ti. Entregamos directamente a tu puerta,
+                  proporcionando comodidad sin comprometer la calidad.
+                </li>
+                <li>
+                  <h4>3. Consultoría Nutricional:</h4>
+                  Nuestros expertos en nutrición están disponibles para ayudarte
+                  a alcanzar tus metas de salud a través de asesoramiento
+                  personalizado y planes de alimentación ajustados a tus
+                  necesidades específicas.
+                </li>
+              </ol>
+            </div>
+            <div class="carrusel">
+              <img src="imagenes/HF 40000.png" alt="Imagen 1" />
+              <img src="imagenes/logo.png" alt="Imagen 2" />
+              <img src="imagenes/1714352703645-thumbnail.jpeg" alt="Imagen 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <dialog id="modal-registrar">
+      <h2>Registrar</h2>
+      <p>ingrasa los siguientes datos para crear tu cuenta</p>
+      <form action="" method="dialog">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" />
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario_R" />
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña_R" />
+        <label for="confirmar_conra">Confirmar contraseña</label>
+        <input type="password" name="confirmar_contra" id="confirmar_contra" />
+        <center>
+          <button id="cerrar-registro" type="submit">Crear cuenta</button>
+        </center>
+      </form>
+    </dialog>
+    <dialog id="modal-login">
+      <h2>Login</h2>
+      <p>Bienvenido a Healthy food</p>
+      <form action="" method="dialog">
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario_L" />
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña_L" />
+        <center>
+          <button id="cerrar-login" type="submit">Iniciar sesion</button>
+        </center>
+      </form>
+    </dialog>
+
+    <footer></footer>
+    <script src="/JS/index.js"></script>
+  </body>
+</html>
