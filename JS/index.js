@@ -37,4 +37,33 @@ document.addEventListener('DOMContentLoaded', function() {
     btnCerrarLogin.addEventListener('click', () => {
         modalLogin.close();
     });
+    const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  let currentSlide = 0;
+
+  prevButton.addEventListener('click', () => {
+    currentSlide--;
+    if (currentSlide < 0) {
+      currentSlide = slides.length - 3; // Asegura que al retroceder se muestren 3 tarjetas
+    }
+    updateSlides();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentSlide++;
+    if (currentSlide > slides.length - 3) {
+      currentSlide = 0; // Vuelve al principio si se alcanza el final
+    }
+    updateSlides();
+  });
+
+  function updateSlides() {
+    const slideWidth = slides[0].offsetWidth;
+    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  }
+
+  updateSlides();
 });
+    
