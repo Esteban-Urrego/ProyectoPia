@@ -38,32 +38,58 @@ document.addEventListener('DOMContentLoaded', function() {
         modalLogin.close();
     });
     const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  let currentSlide = 0;
-
-  prevButton.addEventListener('click', () => {
-    currentSlide--;
-    if (currentSlide < 0) {
-      currentSlide = slides.length - 3; // Asegura que al retroceder se muestren 3 tarjetas
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentSlide = 0;
+    let slideInterval;
+    
+    // Función para avanzar el slider automáticamente cada 5 segundos
+    function startSlider() {
+      slideInterval = setInterval(() => {
+        currentSlide++;
+        if (currentSlide > slides.length - 3) {
+          currentSlide = 0; // Vuelve al principio si se alcanza el final
+        }
+        updateSlides();
+      }, 5000); // Intervalo de 5 segundos
     }
-    updateSlides();
-  });
-
-  nextButton.addEventListener('click', () => {
-    currentSlide++;
-    if (currentSlide > slides.length - 3) {
-      currentSlide = 0; // Vuelve al principio si se alcanza el final
+    
+    // Función para detener el movimiento automático del slider
+    function stopSlider() {
+      clearInterval(slideInterval);
     }
-    updateSlides();
-  });
-
-  function updateSlides() {
-    const slideWidth = slides[0].offsetWidth;
-    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  }
-
-  updateSlides();
+    
+    // Event listener para el botón previo
+    prevButton.addEventListener('click', () => {
+      stopSlider(); // Detiene el movimiento automático al hacer clic manualmente
+      currentSlide--;
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 3;
+      }
+      updateSlides();
+      startSlider(); // Reinicia el movimiento automático después de hacer clic manualmente
+    });
+    
+    // Event listener para el botón siguiente
+    nextButton.addEventListener('click', () => {
+      stopSlider(); // Detiene el movimiento automático al hacer clic manualmente
+      currentSlide++;
+      if (currentSlide > slides.length - 3) {
+        currentSlide = 0;
+      }
+      updateSlides();
+      startSlider(); // Reinicia el movimiento automático después de hacer clic manualmente
+    });
+    
+    // Función para actualizar los slides
+    function updateSlides() {
+      const slideWidth = slides[0].offsetWidth;
+      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+    
+    // Iniciar el slider automáticamente al cargar la página
+    startSlider();
+    
 });
     

@@ -304,6 +304,7 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  justify-content: center;
 }
 
 .card-image {
@@ -316,17 +317,20 @@ p {
 .card-title {
   margin-top: 20px;
   font-size: 24px;
+  text-align: center;
 }
 
 .card-description {
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
 }
 
 .card-price {
-  margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
+  color: black;
+  text-align: center;
 }
 
 .slider-controls {
