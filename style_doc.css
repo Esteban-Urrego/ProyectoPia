@@ -181,7 +181,7 @@ main {
   background-image: url("imagenes/beige-paintbrush-stroke-textured-background.jpg");
 }
 
-.Restaurante_info p {
+.doctores p {
   text-align: center !important;
 }
 #tituloProfesionales {
@@ -301,9 +301,12 @@ main {
   height: 160px;
 }
 .contacto {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  height: 100px;
 }
 .iconos {
   display: flex;
