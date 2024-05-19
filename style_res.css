@@ -34,8 +34,8 @@ h3 {
 .register a {
   flex: 1;
   text-align: center;
-  padding: 10px; /* Ajusta el relleno según sea necesario */
-  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  padding: 10px; 
+  text-decoration: none; 
   color: #ffffff;
   border: 1px solid #00000050;
   border-top: 0px;
@@ -43,7 +43,7 @@ h3 {
   padding: 6px;
   text-decoration: none;
   border-radius: 12px;
-  font-family: "Alegreya", sans-serif; /* Corrección de la declaración de fuente */
+  font-family: "Alegreya", sans-serif; 
   font-size: 15px;
   cursor: pointer;
   background-color: #000000;
@@ -118,18 +118,18 @@ nav ul li {
 }
 .navegador ul {
   display: flex;
-  justify-content: space-around; /* Alinea los elementos horizontalmente */
+  justify-content: space-around; 
 }
 
 .navegador ul li {
-  flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los elementos */
-  text-align: center; /* Centra el texto dentro de cada elemento li */
+  flex: 1; 
+  text-align: center; 
 }
 
 .navegador ul li a {
-  display: block; /* Convierte el enlace en un elemento de bloque */
-  padding: 5px; /* Agrega relleno para espaciar los enlaces */
-  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  display: block; 
+  padding: 5px; 
+  text-decoration: none; 
 }
 .navegador ul li a :hover {
   text-decoration: none;
@@ -188,7 +188,7 @@ nav {
 main{
   background-image: url("imagenes/beige-paintbrush-stroke-textured-background.jpg");
 }
-/*restaurante informacion o bienvenida*/
+
 .Restaurante_info{
   padding: 40px;
   text-align: center;
@@ -197,11 +197,11 @@ main{
 h2{
   text-align: center;
 }
-/* edicion del slider*/
+
 .slider-container {
   position: relative;
-  max-width: 1000px; /* Ancho máximo del contenedor */
-  margin: 40px auto 0; /* Margen superior de 40px y margen izquierdo y derecho automáticos, sin margen inferior */
+  max-width: 1000px; 
+  margin: 40px auto 0; 
   overflow: hidden;
   padding-bottom: 10px;
   
@@ -214,7 +214,7 @@ h2{
 
 .slide {
   flex: 0 0 auto;
-  width: calc(33.33% - 20px); /* Ajustamos el tamaño de las tarjetas */
+  width: calc(33.33% - 20px); 
   margin: 0 5px;
 }
 
@@ -254,8 +254,8 @@ h2{
 }
 
 .slider-controls {
-  margin-top: 20px; /* Espacio entre los botones y las tarjetas */
-  text-align: center; /* Centramos los botones horizontalmente */
+  margin-top: 20px; 
+  text-align: center; 
 }
 
 .prev,
@@ -275,7 +275,6 @@ h2{
   color: #ffffff;
 }
 
-/* texto de la grid */
 
 .grid-container {
   display: grid;
@@ -353,7 +352,7 @@ h2{
   width: 30px;
   height: 30px;
 }
-/* modal */
+
 #modal::backdrop {
   background-color: rgb(0, 0, 0);
 }
