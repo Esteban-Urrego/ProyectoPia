@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
           currentSlide = 0; // Vuelve al principio si se alcanza el final
         }
         updateSlides();
-      }, 2000); // Intervalo de 5 segundos
+      }, 5000); // Intervalo de 5 segundos
     }
     
     // Función para detener el movimiento automático del slider
