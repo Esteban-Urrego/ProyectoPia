@@ -41,7 +41,8 @@
   </header>
   <main>
     <div class="doctores">
-      <h2 id="tituloProfesionales">Profesionales</h2>
+      <h2 id="tituloProfesionales">Guias dispuestos a mejorar tu vida alimentaria</h2>
+      <br>
       <p>Acá podras encontrar doctores especializados en el area de la nutrución y la alimentación saludable, que te
         ayudaran en tu proceso de mejorar tu estilo de vida.
       </p>
@@ -72,7 +73,6 @@
           <div class="card-back">
             <div class="card-info">
               <p>Nutricionista (Nutricionista deportivo)</p>
-
               <button class="openFormBtn">Contactar</button>
             </div>
           </div>
@@ -87,9 +87,8 @@
           <div class="card-back">
             <div class="card-info">
               <p>Nutricionista (Nutrición funcional, Nutrición holística, Nutricionista deportivo, Nutrición materno
-                infantil)
-
-                <button class="openFormBtn">Contactar</button>
+                infantil)</p>
+              <button class="openFormBtn">Contactar</button>
             </div>
           </div>
         </div>
@@ -180,27 +179,6 @@
       </form>
     </div>
 
-
-    <script>
-      document.getElementById('bmiForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        var height = document.getElementById('height').value;
-        var weight = document.getElementById('weight').value;
-        var bmi = weight / ((height / 100) * (height / 100));
-        var result = '';
-        if (bmi < 18.5) {
-          result = 'Tu peso es inferior al normal';
-        } else if (bmi >= 18.5 && bmi <= 24.9) {
-          result = 'Tu peso esnormal';
-        } else if (bmi >= 25 && bmi <= 29.9) {
-          result = 'Tu peso es superior al normal';
-        } else {
-          result = 'Obesidad';
-        }
-        document.getElementById('result').innerText = 'BMI: ' + bmi.toFixed(2) + ', ' + result;
-      });
-    </script>
-
   </main>
   <dialog id="modal-registrar">
     <h2>Registrar</h2>
@@ -287,20 +265,8 @@
       </div>
     </div>
   </footer>
-  <script>
-    const openButtons = document.querySelectorAll('.openFormBtn');
 
-    openButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        document.getElementById('formDialog').showModal();
-      });
-    });
-
-    document.getElementById('closeFormBtn').addEventListener('click', function () {
-      document.getElementById('formDialog').close();
-    });
-  </script>
-  <script src="JS/restaurantes.js"></script>
+  <script src="JS/doctores.js"></script>
 
 </body>
 
