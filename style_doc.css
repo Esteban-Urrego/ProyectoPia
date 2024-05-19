@@ -187,6 +187,7 @@ main {
 #tituloProfesionales {
   text-align: center;
   padding-top: 20px;
+  margin: 0;
 }
 /* edicion del slider*/
 .slider-container {
@@ -249,7 +250,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
 }
 
 .additional-info {
